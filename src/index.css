@@ -1,13 +1,117 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
 }
+
+/* header */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: #F55A5A;
+  color: white;
+}
+
+.header-logo {
+  margin-right: .5em;
+}
+
+.header-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.5px;
+  font-family: Inter;
+  letter-spacing: -0.075em;
+}
+
+
+/* main content */
+
+.card-container {
+  display: flex;
+  width: 400px;
+  max-width: 470px;
+  margin: 2em auto;
+}
+
+
+.card-img {
+  width: 145px;
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.card-info-container { 
+  margin: 1em;
+}
+
+
+.location-info {
+  display: flex;
+  align-items: center;
+}
+
+.location-info > .location {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: .5em;
+}
+
+.location-info > .google-maps {
+  font-size: 10px;
+  color: #918E9B;
+  margin-left: 1em;
+}
+
+.title {
+  margin-bottom: .5em;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2B283A;
+  margin-top: .2em;
+}
+
+.dates {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: .5em;
+}
+
+.description {
+  font-size: 10px;
+  color: #2B283A;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+
+
+ @media (min-width: 540px) {
+  .card-container {
+    width: 700px;
+  }
+  .card-img {
+    margin-right: 1em;
+  }
+
+} 
+
+
+
+
+
